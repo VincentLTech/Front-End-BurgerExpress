@@ -1,4 +1,17 @@
 import React from 'react';
+import {Link} from "react-router-dom"
+
+const btnStyle = {
+    position: "absolute",
+    top: "80%",
+    left: "50%",
+    transform: "translate(-50%, 0%)",
+    padding: "10px",
+    textDecoration: "none",
+    backgroundColor: "#3f0400",
+    color: "bisque",
+    fontSize: "1.5rem"
+}
 
 export default  function Home() {
   return (
@@ -6,7 +19,9 @@ export default  function Home() {
         <div id="banner-div">
             <img src="https://www.nestle.com/sites/default/files/plant-based-bacon-cheeseburger-feed.jpg" id="banner-img" />
             
-            <button id="banner-btn">Order Now</button>
+            <Link to="/Menu" >
+                <button style={btnStyle}>Order Now</button>
+            </Link>
         </div>
 
         <div id="press">
