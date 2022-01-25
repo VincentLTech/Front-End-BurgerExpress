@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+#banner-div {
+  position: relative;
+  text-align: center;
+}
+
+#banner-img {
+  width: 100%;
+}
+
+#banner-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 10px;
+  background-color: #3f0400;
+  color: bisque;
+  font-size: 1.5rem;
+}
+
+#pr-text {
+  font-size: 1.5rem;
+  margin: 35px 25% 35px 25%;
+  text-align: center;
+}
+
+#loc-div {
+  display: inline-block;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  
+
+}
+
+#loc-img {
+  width: 100%;
+  max-height: 10%;
+}
+
+#loc-img-td {
+  width: 45%;
+}
