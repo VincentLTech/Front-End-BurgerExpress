@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom"
+import banImg from './images/burger-banner.jpeg'
 
 const btnStyle = {
     position: "absolute",
@@ -17,7 +18,9 @@ export default  function Home() {
   return (
     <div>
         <div id="banner-div">
-            <img src="https://www.nestle.com/sites/default/files/plant-based-bacon-cheeseburger-feed.jpg" id="banner-img" />
+            <img src={banImg} id="banner-img" />
+ 
+            <h1 id="banner-h"> BURGER EXPRESS </h1>
             
             <Link to="/Menu" >
                 <button style={btnStyle}>Order Now</button>
