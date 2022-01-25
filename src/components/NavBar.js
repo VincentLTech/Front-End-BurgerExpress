@@ -12,7 +12,6 @@ export default function NavBar(  ) {
            <Link to="/">
                  <button className ={"home"} >Home </button>
             </Link> 
-          
             
         </div>
     )
