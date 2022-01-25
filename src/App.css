@@ -81,3 +81,29 @@
 #loc-img-td {
   width: 45%;
 }
+
+#dish-card{
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: auto;
+  padding: 10px;
+  width: 40%;
+}
+
+#dish-p {
+  display: inline;
+  margin-right: 25px;
+}
+
+#dish-add-btn {
+  display: inline;
+  margin-left: 25px;
+}
+
+#dish-card-img-td{
+  width: 30%;
+}
+
+#dish-card-img {
+  width: 80%;
+}
