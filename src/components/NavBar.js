@@ -12,7 +12,19 @@ export default function NavBar() {
       <li style="float:right"><a href="#about">About</a></li>
     </ul>*/
 
+    <div className="navbar">
+            <div className="links">
+                <Link to="/">Home</Link>
+                <Link to="Menu">Menu</Link>
+                <div className="topnav-right">
+                  <Link to="login">Login</Link>
+              </div>
+            </div>
+            
+        </div>
 
+
+        /*
     <div className={"nav"}>
       <Link to="/">
         <button className={"home"}>Home </button>
@@ -21,5 +33,6 @@ export default function NavBar() {
         <button className={"menu"}>Menu </button>
       </Link>
     </div>
+    */
   );
 }

@@ -6,6 +6,7 @@ import Menu from "./components/Menu";
 
 function App() {
   return (
+    
     <BrowserRouter>
       <NavBar />
     
