@@ -48,6 +48,10 @@
   }
 }
 
+#home-body, #menu-body {
+  background-color: #F7F3E3;
+}
+
 
 #banner-div {
   position: relative;
@@ -116,6 +120,7 @@
   padding: 10px;
   width: 40%;
   box-shadow: 0px 5px 4px 0px grey;
+  background-color: #E9E0D8;
 }
 
 #dish-p {
@@ -129,7 +134,7 @@
 }
 
 #dish-card-img-td{
-  width: 30%;
+  width: 45%;
 }
 
 #dish-card-img {
@@ -142,4 +147,6 @@
   font-size: 2rem;
   font-weight: lighter;
   margin-left: 45px;
+  margin-top: 0px;
+  padding-top: 20px;
 }

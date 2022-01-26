@@ -46,14 +46,14 @@ export default function Menu() {
   //   console.log("this", menuItems);
   //   Object.assign({}, ...menuItems.map((x) => ({ [x.type]: x })));
   return (
-    <div>
+    <div id="menu-body">
       <h2 className="dish-type">ENTREES</h2>
       {menuItems.map((item) => {
         return (
           <>{item.type === "entree" ? <MiniDishCard item={item} /> : ""}</>
         );
       })}
-      <h2 className="dish-type">appetizer</h2>
+      <h2 className="dish-type">APPETIZER</h2>
       {menuItems.map((item) => {
         return (
           <>{item.type === "appetizer" ? <MiniDishCard item={item} /> : ""}</>
