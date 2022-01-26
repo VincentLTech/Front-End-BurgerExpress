@@ -1,0 +1,28 @@
+form{
+    display: table;
+    margin: auto;
+    margin-top: 100px;
+    background-color: grey;
+    padding: 35px 40px 40px 40px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+  }
+  .submitBtn{
+    margin-top: 30px;
+    width: 60%;
+    height: 60%;
+    font-size: 1.2rem;
+    background-color: #0096FF;
+    color: white;
+  }
+  label{
+    display: table-cell;
+    padding: 3px;
+  }
+  input{
+    display: table-cell;
+    padding: 3px;
+    border-radius: 10px;
+    border-color: black;
+    height: 17px;
+  }

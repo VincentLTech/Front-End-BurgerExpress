@@ -16,9 +16,10 @@ export default function NavBar() {
             <div className="links">
                 <Link to="/">Home</Link>
                 <Link to="Menu">Menu</Link>
-                <div className="topnav-right">
-                  <Link to="login">Login</Link>
-              </div>
+                
+                <Link to="login">Login</Link>
+                <Link to="register">Register</Link>
+             
             </div>
             
         </div>
