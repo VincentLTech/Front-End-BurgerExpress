@@ -10,13 +10,10 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
-
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/menu" element={<Menu />} />
-
         <Route exact path="/login" element={<Login />} />
-
         <Route exact path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>

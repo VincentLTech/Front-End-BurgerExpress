@@ -6,8 +6,16 @@ export default function Register() {
         <div>
         <form className="form">
             <div>
-                <label>Account Name: </label>
+                <label>First Name: </label>
                 <input type="text" name="first"></input>
+            </div>
+            <div>
+                <label>Last Name: </label>
+                <input type="text" name="last"></input>
+            </div>
+            <div>
+                <label>Phone: </label>
+                <input type="text" name="phone"></input>
             </div>
             <div>
                 <label>Email: </label>
