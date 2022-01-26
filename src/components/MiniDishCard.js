@@ -10,7 +10,7 @@ export default function MiniDishCard(props) {
           <td id="dish-card-img-td">
             <img
               src={
-                item.imgUrl ||
+                item.imageURL ||
                 "https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/hamburger.png"
               }
               id="dish-card-img"
