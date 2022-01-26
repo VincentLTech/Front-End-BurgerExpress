@@ -11,7 +11,9 @@ export default function Menu() {
 
   useEffect(() => {
     async function fectchData() {
-      const menuItemsAPi = await Axios.get(`http://localhost:8080/api/menu/`);
+      const menuItemsAPi = await Axios.get(
+        `https://backend-burger-express.herokuapp.com/api/menu`
+      );
       console.log("this", menuItemsAPi);
       menuItemsAPi.data.sort(function (a, b) {
         return a.type - b.type;
@@ -45,22 +47,29 @@ export default function Menu() {
   //   Object.assign({}, ...menuItems.map((x) => ({ [x.type]: x })));
   return (
     <div>
-      {true && console.log(menuItems[0])}
+      <h2 className="dish-type">ENTREES</h2>
       {menuItems.map((item) => {
         return (
-          <>
-            <h2 className="dish-type"> {item.type}</h2>
-            {console.log("hi")}
-            <MiniDishCard item={item} />
-          </>
+          <>{item.type === "entree" ? <MiniDishCard item={item} /> : ""}</>
+        );
+      })}
+      <h2 className="dish-type">appetizer</h2>
+      {menuItems.map((item) => {
+        return (
+          <>{item.type === "appetizer" ? <MiniDishCard item={item} /> : ""}</>
         );
       })}
 
-      <h2 className="dish-type">ENTREES</h2>
-
       <h2 className="dish-type">DESSERT</h2>
-
+      {menuItems.map((item) => {
+        return (
+          <>{item.type === "dessert" ? <MiniDishCard item={item} /> : ""}</>
+        );
+      })}
       <h2 className="dish-type">DRINKS</h2>
+      {menuItems.map((item) => {
+        return <>{item.type === "drink" ? <MiniDishCard item={item} /> : ""}</>;
+      })}
     </div>
   );
 }
