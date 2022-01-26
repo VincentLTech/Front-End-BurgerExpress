@@ -49,18 +49,18 @@ export default function Menu() {
       {menuItems.map((item) => {
         return (
           <>
-            <h2> {item.type}</h2>
+            <h2 className="dish-type"> {item.type}</h2>
             {console.log("hi")}
             <MiniDishCard item={item} />
           </>
         );
       })}
 
-      <h2>ENTREES</h2>
+      <h2 className="dish-type">ENTREES</h2>
 
-      <h2>DESSERT</h2>
+      <h2 className="dish-type">DESSERT</h2>
 
-      <h2>DRINKS</h2>
+      <h2 className="dish-type">DRINKS</h2>
     </div>
   );
 }

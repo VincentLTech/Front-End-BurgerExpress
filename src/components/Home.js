@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
+import banImg from './images/burger-banner.jpeg';
 import { Link } from "react-router-dom";
 
 const btnStyle = {
   position: "absolute",
-  top: "80%",
+  top: "50%",
   left: "50%",
-  transform: "translate(-50%, 0%)",
+  transform: "translate(-50%, -30%)",
   padding: "10px",
   textDecoration: "none",
   backgroundColor: "#3f0400",
@@ -28,17 +29,17 @@ export default function Home() {
   //     fectchData();
   //   }, []);
   return (
-    <div>
-      <div id="banner-div">
-        <img
-          src="https://www.nestle.com/sites/default/files/plant-based-bacon-cheeseburger-feed.jpg"
-          id="banner-img"
-        />
-
-        <Link to="/Menu">
-          <button style={btnStyle}>Order Now</button>
-        </Link>
-      </div>
+    <div id="home-body">
+        <div id="banner-div">
+            <img src={banImg} id="banner-img" />
+ 
+            <h1 id="banner-h"> BURGER EXPRESS </h1>
+            
+            <Link to="/Menu" >
+                <button style={btnStyle}>Order Now</button>
+            </Link>
+        
+        </div>
 
       <div id="press">
         <p id="pr-text">
