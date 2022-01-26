@@ -4,9 +4,9 @@ import banImg from './images/burger-banner.jpeg'
 
 const btnStyle = {
     position: "absolute",
-    top: "80%",
+    top: "50%",
     left: "50%",
-    transform: "translate(-50%, 0%)",
+    transform: "translate(-50%, -30%)",
     padding: "10px",
     textDecoration: "none",
     backgroundColor: "#3f0400",
@@ -16,7 +16,7 @@ const btnStyle = {
 
 export default  function Home() {
   return (
-    <div>
+    <div id="home-body">
         <div id="banner-div">
             <img src={banImg} id="banner-img" />
  

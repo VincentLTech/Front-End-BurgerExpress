@@ -1,5 +1,6 @@
 import React from "react";
 import MiniDishCard from "./MiniDishCard";
+import Axios from 'axios'
 
 export default function Menu(){
     return (

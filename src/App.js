@@ -12,8 +12,6 @@ function App() {
     
       <Routes>
         <Route exact path="/" element={<Home />} />
-      </Routes>
-      <Routes>
         <Route exact path="/menu" element={<Menu />} />
       </Routes>
     </BrowserRouter>
