@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [name, setName] = useState("");
-  const [message, setMessage] = useState("logged in");
+
   useEffect(() => {});
 
   useEffect(() => {
@@ -26,15 +26,24 @@ export default function NavBar() {
         <Link to="/">Home</Link>
         <Link to="Menu">Menu</Link>
 
-        {name && message ? (
-          <Link to="logout" onClick={() => setMessage("")}>
+        {/* {name ? (
+          <Link to="logout" onClick={() => setName("")}>
             logout
           </Link>
         ) : (
-          <Link to="login" onClick={() => setMessage("logged")}>
+          <Link to="login" onClick={() => setName("logged")}>
             Login
           </Link>
-        )}
+        )} */}
+
+        <Link to="logout" onClick={() => setName("")}>
+          logout
+        </Link>
+
+        <Link to="login" onClick={() => setName("logged")}>
+          Login
+        </Link>
+
         <Link to="register">Register</Link>
         <Link to="cart">Cart</Link>
         <p style={{ float: "right", color: "white", margin: "10px" }}>
