@@ -37,7 +37,7 @@ export default function NavBar() {
         )} */}
 
         <Link to="logout" onClick={() => setName("")}>
-          logout
+          Log Out
         </Link>
 
         <Link to="login" onClick={() => setName("logged")}>
