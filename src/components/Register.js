@@ -1,10 +1,12 @@
 import React from "react";
-import "../Register.css"; 
-
+import "../Login.css"; 
+import grillBg from './images/NYPizzaPie.jpg';
 export default function Register() {
     return (
         <div>
-        <form className="form">
+            <img src={grillBg} id="login-bg-img"/>
+            <div id="login-body">
+            <form className="form">
             <div>
                 <label>First Name: </label>
                 <input type="text" name="first"></input>
@@ -33,6 +35,7 @@ export default function Register() {
                 <input className="submitBtn" type="submit" value="Submit"></input>
             </div>
         </form>
+        </div>
     </div>
     )
 }
