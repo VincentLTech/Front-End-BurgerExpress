@@ -25,21 +25,13 @@ export default function NavBar() {
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="Menu">Menu</Link>
-
-        {name && message ? (
-          <Link to="logout" onClick={() => setMessage("")}>
-            logout
-          </Link>
-        ) : (
-          <Link to="login" onClick={() => setMessage("logged")}>
-            Login
-          </Link>
-        )}
+        
+        <Link to="login" onClick={() => setMessage("logged")}></Link>
         <Link to="register">Register</Link>
         <Link to="cart">Cart</Link>
         <p style={{ float: "right", color: "white", margin: "10px" }}>
           {" "}
-          Hi {name}{" "}
+          <Link to="logout" onClick={() => setMessage("")}></Link>{name}{" "}
         </p>
       </div>
     </div>
