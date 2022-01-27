@@ -1,8 +1,11 @@
 import React from "react";
 
 export default function MiniDishCard(props) {
-  const item = { ...props.item };
-  console.log(item);
+  const desc = { ...props };
+  const item = desc.item;
+  const getData = desc.getData;
+  // console.log(item);
+  // console.log(getData);
 
   function handleClick() {
     //   post to cart(orders) here
@@ -18,9 +21,8 @@ export default function MiniDishCard(props) {
       
       setTimeout(()=> navigate(-1),500)
     */
-    console.log("this is " + item.id)
+    console.log("this is " + item.id);
   }
-
 
   return (
     <div id="dish-card">
@@ -41,7 +43,9 @@ export default function MiniDishCard(props) {
             <p>{item.description}</p>
             <div id="dish-bottom">
               <p id="dish-p">{item.price}</p>
-              <button id="dish-add-btn" onClick={handleClick}>Add</button>
+              <button id="dish-add-btn" onClick={() => getData(item.id)}>
+                Add
+              </button>
             </div>
           </td>
         </tr>

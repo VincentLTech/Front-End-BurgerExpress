@@ -9,6 +9,24 @@ import Cart from "./components/Cart";
 import Logout from "./components/Logout";
 
 function App() {
+  // const isLoggedIn = async (req, res, next) => {
+  //   try {
+  //     console.log("IN GATEKEEPING");
+  //     const user = await User.findOne({
+  //       where: {
+  //         firebaseUserId: req.headers.authorization,
+  //       },
+  //     });
+  //     if (user) {
+  //       req.user = user;
+  //       next();
+  //     } else {
+  //       return res.status(404).send("Please log in!");
+  //     }
+  //   } catch (error) {
+  //     next(error);
+  //   }
+  // };
   return (
     <BrowserRouter>
       <NavBar />
