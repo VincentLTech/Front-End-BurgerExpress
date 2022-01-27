@@ -1,8 +1,16 @@
-import React from "react";
-import "../NavBar.css"; 
+import React, { useEffect, useState } from "react";
+import "../NavBar.css";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
+  const [name, setName] = useState("");
+  useEffect(() => {});
+
+  useEffect(() => {
+    if (localStorage.getItem("name")) {
+      setName(localStorage.getItem("name"));
+    }
+  }, []);
   return (
     /*
     <ul>
@@ -13,19 +21,21 @@ export default function NavBar() {
     </ul>*/
 
     <div className="navbar">
-            <div className="links">
-                <Link to="/">Home</Link>
-                <Link to="Menu">Menu</Link>
-                
-                <Link to="login">Login</Link>
-                <Link to="register">Register</Link>
-             
-            </div>
-            
-        </div>
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="Menu">Menu</Link>
 
+        <Link to="login">Login</Link>
+        <Link to="register">Register</Link>
+        <Link to="cart">Cart</Link>
+        <p style={{ float: "right", color: "white", margin: "10px" }}>
+          {" "}
+          Hi {name}{" "}
+        </p>
+      </div>
+    </div>
 
-        /*
+    /*
     <div className={"nav"}>
       <Link to="/">
         <button className={"home"}>Home </button>
