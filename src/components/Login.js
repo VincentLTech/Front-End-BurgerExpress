@@ -1,7 +1,6 @@
 import React from "react";
 import "../Login.css"; 
 import grillBg from './images/grill-bg.jpeg';
-
 export default function Login() {
     return (
         <div>

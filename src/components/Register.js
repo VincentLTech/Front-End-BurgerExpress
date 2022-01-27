@@ -1,12 +1,12 @@
 import React from "react";
-import "../Login.css"; 
+import "../Register.css"; 
 import grillBg from './images/NYPizzaPie.jpg';
 export default function Register() {
     return (
         <div>
-            <img src={grillBg} id="login-bg-img"/>
-            <div id="login-body">
-            <form className="form">
+            <img src={grillBg} id="register-bg-img"/>
+            <div id="register-body">
+        <form className="form">
             <div>
                 <label>First Name: </label>
                 <input type="text" name="first"></input>
