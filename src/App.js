@@ -5,7 +5,8 @@ import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Cart from "./components/Cart"
+import Cart from "./components/Cart";
+import Logout from "./components/Logout";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/menu" element={<Menu />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/logout" element={<Logout />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/cart" element={<Cart />} />
       </Routes>

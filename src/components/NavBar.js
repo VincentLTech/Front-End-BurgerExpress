@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [name, setName] = useState("");
+  const [message, setMessage] = useState("logged in");
   useEffect(() => {});
 
   useEffect(() => {
@@ -25,7 +26,15 @@ export default function NavBar() {
         <Link to="/">Home</Link>
         <Link to="Menu">Menu</Link>
 
-        <Link to="login">Login</Link>
+        {name && message ? (
+          <Link to="logout" onClick={() => setMessage("")}>
+            logout
+          </Link>
+        ) : (
+          <Link to="login" onClick={() => setMessage("logged")}>
+            Login
+          </Link>
+        )}
         <Link to="register">Register</Link>
         <Link to="cart">Cart</Link>
         <p style={{ float: "right", color: "white", margin: "10px" }}>

@@ -27,7 +27,9 @@ export default function Home() {
   //       setMenuItems(menuItemsAPi.data);
   //     }
   //     fectchData();
-  //   }, []);
+  //   }, []); 
+  
+
   return (
     <div id="home-body">
         <div id="banner-div">
