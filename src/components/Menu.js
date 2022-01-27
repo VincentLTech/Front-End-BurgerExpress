@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import MiniDishCard from "./MiniDishCard";
 import Axios from "axios";
+import { Link } from "react-router-dom";
+
 const cardStyle = {
   display: "inline-block",
 };
@@ -47,7 +49,7 @@ export default function Menu() {
   //   Object.assign({}, ...menuItems.map((x) => ({ [x.type]: x })));
   return (
     <div id="menu-body">
-      <h3 id="menu-cart-h">View Cart</h3>
+      <h3 id="menu-cart-h"><Link to="/Cart">View Cart</Link></h3>
       <h2 className="dish-type">ENTREES</h2> 
       {menuItems.map((item) => {
         return (

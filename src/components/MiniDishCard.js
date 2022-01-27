@@ -13,7 +13,7 @@ export default function MiniDishCard(props) {
           foodItemId: item.id
       }).then(res => console.log(res))
       .catch(err => {
-          console.log(err)
+        console.log(err)
       })
       
       setTimeout(()=> navigate(-1),500)
