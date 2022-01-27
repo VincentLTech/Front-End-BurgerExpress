@@ -3,6 +3,25 @@ import React from "react";
 export default function MiniDishCard(props) {
   const item = { ...props.item };
   console.log(item);
+
+  function handleClick() {
+    //   post to cart(orders) here
+    /*
+      Axios.post("", {
+          orderId: ,
+          customerId: ,
+          foodItemId: item.id
+      }).then(res => console.log(res))
+      .catch(err => {
+          console.log(err)
+      })
+      
+      setTimeout(()=> navigate(-1),500)
+    */
+    console.log("this is " + item.id)
+  }
+
+
   return (
     <div id="dish-card">
       <table>
@@ -22,7 +41,7 @@ export default function MiniDishCard(props) {
             <p>{item.description}</p>
             <div id="dish-bottom">
               <p id="dish-p">{item.price}</p>
-              <button id="dish-add-btn">Add</button>
+              <button id="dish-add-btn" onClick={handleClick}>Add</button>
             </div>
           </td>
         </tr>

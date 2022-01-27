@@ -112,6 +112,15 @@
   width: 45%;
 }
 
+#menu-cart-h {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 10px;
+  margin-left: 85%;
+  padding-bottom: 0px;
+}
+
 #dish-card{
   display: inline-block;
   margin-left: 5%;

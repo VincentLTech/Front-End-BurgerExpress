@@ -47,7 +47,8 @@ export default function Menu() {
   //   Object.assign({}, ...menuItems.map((x) => ({ [x.type]: x })));
   return (
     <div id="menu-body">
-      <h2 className="dish-type">ENTREES</h2>
+      <h3 id="menu-cart-h">View Cart</h3>
+      <h2 className="dish-type">ENTREES</h2> 
       {menuItems.map((item) => {
         return (
           <>{item.type === "entree" ? <MiniDishCard item={item} /> : ""}</>
