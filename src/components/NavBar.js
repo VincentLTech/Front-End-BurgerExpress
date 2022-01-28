@@ -46,7 +46,7 @@ export default function NavBar() {
         </Link> */}
 
         <Link to="register">Register</Link>
-        <Link to="cart">Cart</Link>
+        <Link to="Cart">Cart</Link>
         <p style={{ float: "right", color: "white", margin: "10px" }}>
           Hi {name}
         </p>
