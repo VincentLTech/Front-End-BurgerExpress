@@ -52,7 +52,7 @@ export default function Login() {
           <div>
             <label>Password: </label>
             <input
-              type="text"
+              type="Password"
               name="Password"
               onChange={(e) => setPassword(e.target.value)}
             />

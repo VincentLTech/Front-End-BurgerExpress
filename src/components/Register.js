@@ -77,7 +77,7 @@ export default function Register() {
           <div>
             <label>Confirm Password: </label>
             <input
-              type="text"
+              type="password"
               name="email"
               onChange={(e) => setPasswordConf(e.target.value)}
             />
