@@ -6,8 +6,6 @@ export default function NavBar() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  useEffect(() => {});
-
   useEffect(() => {
     if (localStorage.getItem("name")) {
       setName(localStorage.getItem("name"));
