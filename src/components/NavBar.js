@@ -27,7 +27,7 @@ export default function NavBar() {
         <Link to="/">Home</Link>
         <Link to="Menu">Menu</Link>
 
-        {name ? (
+        {name && message ? (
           <Link to="logout" onClick={() => setMessage("")}>
             logout
           </Link>

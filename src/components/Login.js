@@ -9,7 +9,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
 
-  async function handleSubmit(e, values) {
+  async function handleSubmit(e) {
     e.preventDefault();
     await Axios.post(
       `https://backend-burger-express.herokuapp.com/api/customer/login`,
@@ -21,7 +21,8 @@ export default function Login() {
       const respo = response.data;
       localStorage.setItem("name", respo.firstName);
       localStorage.setItem("id", respo.id);
-      if (response.status == 200) setRedirect(true);
+      // if (response.status == 200)
+      setRedirect(true);
 
       //   console.log(response);
       //   if (response.data.accessToken) {
