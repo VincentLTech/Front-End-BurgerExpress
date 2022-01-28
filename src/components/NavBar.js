@@ -26,7 +26,7 @@ export default function NavBar() {
         <Link to="/">Home</Link>
         <Link to="Menu">Menu</Link>
 
-        {/* {name ? (
+        {name ? (
           <Link to="logout" onClick={() => setName("")}>
             logout
           </Link>
@@ -34,15 +34,15 @@ export default function NavBar() {
           <Link to="login" onClick={() => setName("logged")}>
             Login
           </Link>
-        )} */}
+        )}
 
-        <Link to="logout" onClick={() => setName("")}>
+        {/* <Link to="logout" onClick={() => setName("")}>
           Log Out
         </Link>
 
         <Link to="login" onClick={() => setName("logged")}>
           Login
-        </Link>
+        </Link> */}
 
         <Link to="register">Register</Link>
         <Link to="cart">Cart</Link>
