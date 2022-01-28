@@ -32,9 +32,12 @@ export default function NavBar() {
             logout
           </Link>
         ) : (
-          <Link to="login" onClick={() => setMessage("logged")}>
-            Login
-          </Link>
+          <>
+            <Link to="login" onClick={() => setMessage("logged")}>
+              Login
+            </Link>
+            <Link to="register">Register</Link>
+          </>
         )}
 
         {/* <Link to="logout" onClick={() => setName("")}>
@@ -45,7 +48,6 @@ export default function NavBar() {
           Login
         </Link> */}
 
-        <Link to="register">Register</Link>
         <Link to="Cart">Cart</Link>
         <p style={{ float: "right", color: "white", margin: "10px" }}>
           Hi {name}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
+import { Navigate } from "react-router-dom";
 
 import "../Register.css";
 import grillBg from "./images/NYPizzaPie.jpg";
@@ -12,7 +13,7 @@ export default function Register() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [redirect, setRedirect] = useState(false);
 
-  async function handleSubmit(e, values) {
+  async function handleSubmit(e) {
     e.preventDefault();
     console.log("wow");
     if (passwordConf === password) {
@@ -31,6 +32,9 @@ export default function Register() {
       console.log("the password did not match ");
       setRedirect(false);
     }
+  }
+  if (redirect) {
+    return <Navigate to="/login" />;
   }
 
   return (
