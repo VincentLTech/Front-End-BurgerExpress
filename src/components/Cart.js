@@ -27,8 +27,8 @@ export default function Cart(props) {
       let total = 0;
       for (let j = 0; j < tempItem.length; j++) {
         console.log("total: " + total);
-        for (let i in cartItem) {
-          if (i == tempItem[j].id) {
+        for (let i = 0; i < cartItem.length; i++) {
+          if (cartItem[i] == tempItem[j].id) {
             itemsMenu.push(tempItem[j]);
 
             total = parseFloat(total) + parseFloat(tempItem[j].price);
@@ -71,7 +71,7 @@ export default function Cart(props) {
         {menuItems.map((item) => {
           //   return <MiniDishCard item={item} />;
           return (
-            <div>
+            <div key={item.id}>
               <p id="item-name">{item.name}</p>
               <p id="item-price">$ {item.price}</p>
               <button
