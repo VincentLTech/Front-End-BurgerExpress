@@ -48,7 +48,9 @@ export default function Cart(props) {
     await Axios.post(
       `https://backend-burger-express.herokuapp.com/api/orders/newOrder`,
       {
-        cartItem,
+        order: "Pending",
+        customerId: localStorage.getItem("id"),
+        items: cartItem,
       }
     ).then((response) => {
       const respo = response.data;
