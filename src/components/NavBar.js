@@ -46,7 +46,7 @@ export default function NavBar() {
           Login
         </Link> */}
 
-        <Link to="Cart">Cart</Link>
+        <Link to="Cart" state = {[1]}>Cart</Link>
         <p style={{ float: "right", color: "white", margin: "10px" }}>
           Hi {name}
         </p>
