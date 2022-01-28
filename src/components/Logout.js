@@ -17,7 +17,7 @@ export default function logout() {
         <form className="form">
 
             <div>
-                <label><i><center>Thank you for eatting with us.</center> </i></label>
+                <label><i><center>Thank you for eating with us.</center> </i></label>
             </div>
             <div>
                 <label><i><center>We hope to be serving you soon!</center></i> </label>

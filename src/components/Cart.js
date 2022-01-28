@@ -9,6 +9,7 @@ export default function Cart(props) {
   const [menuItems, setMenuItems] = useState([]);
   const [holder, setMenuHolder] = useState({});
   const [totalPrice, setTotalPrice] = useState(0);
+  const [checkedOut, setCheckedOut] = useState(false);
 
   useEffect(() => {
     async function fectchData() {
@@ -57,11 +58,35 @@ export default function Cart(props) {
 
       return response.data;
     });
+    setCheckedOut(true);
   }
   function hanldeRemove(id, price) {
     let output = menuItems.filter((obj) => obj.id !== id);
     setMenuItems(output);
     setTotalPrice(totalPrice - price);
+  }
+  if (checkedOut) {
+    return (
+      <div
+        style={{
+          height: "400px",
+        }}
+        id="cart-body"
+      >
+        <h2 id="cart-h"> </h2>
+        <h1
+          style={{
+            position: "fixed",
+            right: "45%",
+            left: "45%",
+            height: "400px",
+          }}
+        >
+          {" "}
+          Working On Your Order
+        </h1>
+      </div>
+    );
   }
 
   return (
