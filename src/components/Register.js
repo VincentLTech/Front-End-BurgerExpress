@@ -16,16 +16,20 @@ export default function Register() {
     e.preventDefault();
     console.log("wow");
     if (passwordConf === password) {
-      await Axios.post(`http://localhost:8080/api/customer/register`, {
-        firstName,
-        lastName,
-        phoneNumber,
-        email,
-        password,
-      });
+      await Axios.post(
+        `https://backend-burger-express.herokuapp.com/api/customer/register`,
+        {
+          firstName,
+          lastName,
+          phoneNumber,
+          email,
+          password,
+        }
+      );
       setRedirect(true);
     } else {
       console.log("the password did not match ");
+      setRedirect(false);
     }
   }
 

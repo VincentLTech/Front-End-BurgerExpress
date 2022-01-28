@@ -11,14 +11,17 @@ export default function Login() {
 
   async function handleSubmit(e, values) {
     e.preventDefault();
-    await Axios.post(`http://localhost:8080/api/customer/login`, {
-      email: email,
-      password: password,
-    }).then((response) => {
+    await Axios.post(
+      `https://backend-burger-express.herokuapp.com/api/customer/login`,
+      {
+        email: email,
+        password: password,
+      }
+    ).then((response) => {
       const respo = response.data;
       localStorage.setItem("name", respo.firstName);
       localStorage.setItem("id", respo.id);
-      setRedirect(true);
+      if (response.status == 200) setRedirect(true);
 
       //   console.log(response);
       //   if (response.data.accessToken) {

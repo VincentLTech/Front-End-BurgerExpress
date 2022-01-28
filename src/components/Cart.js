@@ -45,9 +45,12 @@ export default function Cart(props) {
   }, []);
 
   async function hanldeCheckout() {
-    await Axios.post(`http://localhost:8080/api/orders/newOrder`, {
-      cartItem,
-    }).then((response) => {
+    await Axios.post(
+      `https://backend-burger-express.herokuapp.com/api/orders/newOrder`,
+      {
+        cartItem,
+      }
+    ).then((response) => {
       const respo = response.data;
 
       return response.data;

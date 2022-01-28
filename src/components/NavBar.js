@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {});
 
@@ -27,11 +28,11 @@ export default function NavBar() {
         <Link to="Menu">Menu</Link>
 
         {name ? (
-          <Link to="logout" onClick={() => setName("")}>
+          <Link to="logout" onClick={() => setMessage("")}>
             logout
           </Link>
         ) : (
-          <Link to="login" onClick={() => setName("logged")}>
+          <Link to="login" onClick={() => setMessage("logged")}>
             Login
           </Link>
         )}
