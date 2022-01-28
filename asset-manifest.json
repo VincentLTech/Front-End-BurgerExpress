@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Front-End-BurgerExpress/static/css/main.a65e352f.css",
+    "main.js": "/Front-End-BurgerExpress/static/js/main.7b96c89f.js",
+    "static/media/feature-1.jpg": "/Front-End-BurgerExpress/static/media/feature-1.dff8d6f1e80791b16f57.jpg",
+    "static/media/burger-banner.jpeg": "/Front-End-BurgerExpress/static/media/burger-banner.baa499f816f0cbf1668b.jpeg",
+    "static/media/NYPizzaPie.jpg": "/Front-End-BurgerExpress/static/media/NYPizzaPie.883523e4c54c89cc84bb.jpg",
+    "static/media/grill-bg.jpeg": "/Front-End-BurgerExpress/static/media/grill-bg.b5ff42bc06c18ab9ad34.jpeg",
+    "index.html": "/Front-End-BurgerExpress/index.html",
+    "main.a65e352f.css.map": "/Front-End-BurgerExpress/static/css/main.a65e352f.css.map",
+    "main.7b96c89f.js.map": "/Front-End-BurgerExpress/static/js/main.7b96c89f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a65e352f.css",
+    "static/js/main.7b96c89f.js"
+  ]
+}
