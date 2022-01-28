@@ -51,7 +51,7 @@ export default function Cart(props) {
       {
         order: "Pending",
         customerId: localStorage.getItem("id"),
-        items: cartItem,
+        items: cartItem
       }
     ).then((response) => {
       const respo = response.data;
