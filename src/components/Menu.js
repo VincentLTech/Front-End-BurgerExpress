@@ -86,7 +86,6 @@ export default function Menu() {
           </>
         );
       })}
-      good
       <h2 className="dish-type">DESSERT</h2>
       {menuItems.map((item) => {
         return (
