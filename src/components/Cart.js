@@ -55,7 +55,7 @@ export default function Cart(props) {
       }
     ).then((response) => {
       const respo = response.data;
-
+      alert("Your order has been sent!");
       return response.data;
     });
     setCheckedOut(true);
@@ -76,15 +76,19 @@ export default function Cart(props) {
         <h2 id="cart-h"> </h2>
         <h1
           style={{
-            position: "fixed",
-            right: "45%",
-            left: "45%",
-            height: "400px",
+            textAlign: "center"
           }}
         >
           {" "}
           Working On Your Order
         </h1>
+        <p style={{
+          fontSize: "1.5rem",
+          textAlign: "center"
+
+        }}> 
+        Time left: 30 minutes</p>
+
       </div>
     );
   }
